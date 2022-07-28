@@ -1,0 +1,40 @@
+input{
+    width: 345px;
+    height: 40px;
+    border-radius: 50px 0   0 50px;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    outline: none;
+    padding-left: 10px;
+    background-color: transparent;
+    border-right: 1px solid  darkslategrey;;
+   
+
+}
+.inputForm{
+    width: 400px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    margin:  20px  auto;
+    border-radius:50px;
+    outline: none;
+    border: none;
+background-color: ivory;
+
+
+
+}
+.searchIcon{
+    font-size: 25px;
+    margin-top: 9px;
+    margin-left: 13px;
+
+    
+}
+::placeholder{
+    font-size: 18px;
+ 
+  
+}
