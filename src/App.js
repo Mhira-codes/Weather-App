@@ -1,7 +1,35 @@
 
+
 import './App.css';
 import Input from './components/Input';
+import {useEffect} from "react"
+import axios from 'axios';
+
+
+
+//  9e2e1ce388b4241fdb4d7c7f3746c434
+
+ 
+
 function App() {
+
+const API_KEY ="9e2e1ce388b4241fdb4d7c7f3746c434" ;
+const fetchData= async ()=> {
+ const response = await axios.get("https://api.openweathermap.org/data/2.5/weather?q={tokyo}&appid={API key}")
+const data = await response.data
+
+console.log(data)
+}
+
+
+
+
+useEffect(()=> {
+ fetchData()
+},[])
+
+
+ 
   return (
     <div className="App">
 <div className='weatherContainer'>
