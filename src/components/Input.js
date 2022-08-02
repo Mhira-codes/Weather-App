@@ -1,15 +1,16 @@
 import './input.css'
 import { BiSearch } from "react-icons/bi"
 
-const Input = () => {
+const Input = ({text, submit,func}) => {
   return (
-    <div className='inputForm'>
-        <input  type={'text'} placeholder="Enter a city name"
-        value=''
-        onChange={()=>{}}/>
-        <div>    <BiSearch className='searchIcon'/></div>
+    // !onSubmit in used in forms
+    <form className='inputForm' onSubmit={submit}>
+       <input  type={'text'} placeholder="Enter a city name"
+        onChange={text}/>
+        <div onClick={func}>   
+           <BiSearch className='searchIcon'/></div>
     
-    </div>
+    </form>
   )
 }
 
